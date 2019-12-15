@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}
+
+
+body {
+  margin: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container{
+	height: 97vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.navBar{
+	height: 7%;
+	width: 100%;
+	display:flex;
+	background-color:#fefefe;
+}
+
+.navLeft{
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	text-align: left;
+}
+
+.navCenter {
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+}
+
+.navRight {
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+	text-align: left;
+}
+
+.home {
+	height: 93%;
+	width:100%;
+	display: flex;
+}
+
+.sideBar {
+	height: 100%;
+	width: 20%;
+	background-color: #ddd;
+}
+
+.homeContainer {
+	height: 100%;
+	width:80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.statement {
+	height:21%; 
+	width:100%;
+	background-color: #eeee00;
+}
+
+.homeContent {
+	height: 79%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #ee9900;
+}
+

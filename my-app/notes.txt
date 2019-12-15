@@ -1,0 +1,73 @@
+flex definitions
+
+
+
+.container{
+	height: 97vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.navBar{
+	height: 7%;
+	width: 100%;
+	display:flex;
+}
+
+.navLeft{
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	text-align: left;
+	background-color:#3399ff;
+}
+
+.navCenter {
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+	background-color: #ff3399;
+}
+
+.navRight {
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+	text-align: left;
+	background-color: #009999;
+}
+
+.home {
+	height: 93%;
+	width:100%;
+	display: flex;
+}
+
+.sideBar {
+	height: 100%;
+	width: 20%;
+	background-color: #ddd;
+}
+
+.homeContainer {
+	height: 100%;
+	width:80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.statement {
+	height:21%; 
+	width:100%;
+	background-color: #eeee00;
+}
+
+.homeContent {
+	height: 79%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #ee9900;
+}
