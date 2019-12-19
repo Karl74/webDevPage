@@ -1,14 +1,11 @@
 flex definitions
 
-
-
 .container{
 	height: 97vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
-
 
 .navBar{
 	height: 7%;
@@ -71,3 +68,93 @@ flex definitions
 	justify-content: space-around;
 	background-color: #ee9900;
 }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #f1f1f1;
+}
+
+/* The laptop with borders */
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  left: 50%;
+  position: absolute;
+  width: 1366px;
+  height: 800px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: black;
+
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 80px 0 0 -110px;
+  background: black;
+  border-radius: 6px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<div class="laptop">
+  <div class="content">
+    <iframe src="/w3css/tryw3css_templates_band.htm" style="width:100%;border:none;height:100%" />
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<img width="190px" alt="content is here" src="./churchInPhone.png"/>
+
+
+button notes
+border 1px
+pading 6px
+width 112
+height: 31
+
+total width = 126
+total height = 45

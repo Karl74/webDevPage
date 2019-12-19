@@ -9,7 +9,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  background-color: #fefefe;
+  color:#392613;
 }
+
+/*w3schools base color #380F02*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -29,27 +33,29 @@ code {
 	height: 7%;
 	width: 100%;
 	display:flex;
-	background-color:#fefefe;
+	margin-bottom: 30px;
 }
 
 .navLeft{
-	height: 100%;
 	width: 20%;
-	display: inline-block;
+	display: flex;
 	text-align: left;
+	font-size: .8em;
+	line-height: 1em;
 }
 
 .navCenter {
-	height: 100%;
 	width: 40%;
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+	font-size: .8em;
+	line-height: 1em;
 }
 
 .navRight {
-	height: 100%;
 	width: 40%;
-	display: inline-block;
-	text-align: left;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .home {
@@ -61,7 +67,7 @@ code {
 .sideBar {
 	height: 100%;
 	width: 20%;
-	background-color: #ddd;
+	font-size: 14px;
 }
 
 .homeContainer {
@@ -72,16 +78,14 @@ code {
 }
 
 .statement {
-	height:21%; 
+	height:25%; 
 	width:100%;
-	background-color: #eeee00;
 }
 
 .homeContent {
-	height: 79%;
+	height: 75%;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	background-color: #ee9900;
 }
 
