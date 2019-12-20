@@ -1,17 +1,22 @@
 import React from "react"
 
 const proyectBtn ={
-	width:"126px",
+	width:"150px",
 	height:"45px",
-	background:"#eea",
-	color:"black",
-	border:"1px solid green",
-	borderRadius:"15px",
+	margin:"5px",
+	background:"#fefefe",
+	color:"#006496",
+	fontSize:"1.7em",
+	fontWeight:"bolder",
+	borderRadius:"10px",
+	border:"2px solid #006496",
+	cursor:"pointer"
+
 }
 
 const Project = ()=>
 	<div>
-		<button style={proyectBtn}>PName</button>
+		<button style={proyectBtn}>Project</button>
 	</div>
 
 export default Project	

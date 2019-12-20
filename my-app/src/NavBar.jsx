@@ -18,19 +18,30 @@ const linkStyle = {
 	cursor:"pointer"
 }
 
-const NavBar = ()=>
+const NavBar = ({navData, change})=>{
+const {languages} = navData
+const {links} = navData
+
+const getIt = (e)=>{
+	e.preventDefault()
+	change(e.target.dataset.label)
+}
+return (
 	<div className="navBar">
-		<nav className="navLeft">
-			<p style={tabStyle}>English</p> 
-			<p style={tabStyle}>Spanish</p>
-			<p style={tabStyle}>French</p>
+		<nav className="languages">
+			{languages.map((language, i)=>
+				<p key={i} style={tabStyle} data-label={i} onClick={getIt}>{language}</p>)}
 
 		</nav>
 		<nav className="navCenter">
-			<p style={linkStyle}> {"\u2302"} Home</p> 
-			<p style={linkStyle}> Projects</p>
-			<p style={linkStyle}> Contact</p>
+			{links.map((link,i)=>
+				<p key={i} style={linkStyle}>{link}</p> )
+			}
+
+			
 		</nav>
+
+
 		<nav className="navRight">
 			<div style={{marginLeft:"10px"}}>
 				<a href="https://github.com/Karl74" target="blank">
@@ -53,5 +64,6 @@ const NavBar = ()=>
 
 		</nav>
 	</div>
-
+)
+}
 export default NavBar

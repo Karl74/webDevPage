@@ -158,3 +158,15 @@ height: 31
 
 total width = 126
 total height = 45
+
+const appData = (this.state.language === "french") ? french:
+                (this.state.language === "spanish")? spanish:
+                english
+
+const {english, spanish, french}= this.props.data 
+  }
+
+
+notes: links is not a function 
+
+
