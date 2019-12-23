@@ -11,11 +11,11 @@ const projectsContainer = {
 
 const buttonBoxStyle = {
 	position:"relative",
-	width:"150px"
+	width:"165px"
 }
 
 const btnStyle = {
-	width:"150px",
+	width:"165px",
 	height:"45px",
 	background:"#006496",
 	color:"#FEFEFE",
@@ -37,19 +37,17 @@ const showCaseStyle = {
 	margin:"0px 0px 100px 0px"
 }
 
-const ProjectsMenu = () =>
+const ProjectsMenu = ({labelbtn, projects}) =>
 	<div className="projectsContainer" style={projectsContainer}>
 		<div className="buttonBox" style={buttonBoxStyle}>
-			<button className="projectsBtn" style={btnStyle}>Portfolio</button>
+			<button className="projectsBtn" style={btnStyle}>{labelbtn}</button>
 		</div>
 		
 		<div className="showCase" style={showCaseStyle}>
-			<Project/>
-			<Project/>
-			<Project/>
-			<Project/>
+			{projects.map((project, i)=>
+				<Project key={i} name={project}/>
+				)}
 		</div>	
 	</div>
-
 export default ProjectsMenu
 	

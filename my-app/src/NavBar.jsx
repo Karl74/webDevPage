@@ -45,18 +45,18 @@ return (
 		<nav className="navRight">
 			<div style={{marginLeft:"10px"}}>
 				<a href="https://github.com/Karl74" target="blank">
-				<img height="20px" width="20px" src="./githubico3.png"/>
+				<img height="20px" width="20px" src="./githubico3.png" alt="github"/>
 				</a>
 			</div>
 			<div style={{marginLeft:"10px"}}>
 				<a href="https://www.linkedin.com/in/carlos-castro-134724132/" target="blank">
-				<img height="20px" width="20px" src="./linkinico.png"/>
+				<img height="20px" width="20px" src="./linkinico.png" alt="linkedin"/>
 				</a>
 			</div>
 
 			<div style={{marginLeft:"10px"}}>
 				 <a href="mailto:carlos.castro@gmail.com?Subject=Contact20to" target="_top">
-				 <img height="20px" width="20px" src="./mailicon.png"/>
+				 <img height="20px" width="20px" src="./mailicon.png" alt="contact"/>
 				 </a>
 
 

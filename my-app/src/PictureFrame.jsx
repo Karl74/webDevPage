@@ -81,7 +81,7 @@ const PictureFrame = () =>
 	<div className="PictureFrame"style={frameStyle}>
 		<div className="laptopCont" style={laptopCont}>
 			<div style={screen}>
-				<img src="./churchpagefit.png" style={{width:"228px", margin:"2px"}}/>
+				<img src="./churchpagefit.png" style={{width:"228px", margin:"2px"}}alt="computer screen"/>
 			</div>
 			
 			<div style={keyboard}>
@@ -92,7 +92,7 @@ const PictureFrame = () =>
 		<div className="phoneCont" style={phoneCont}>
 			<div className="phone" style={phone}>
 				<div className="bar" style={bar}></div>
-				<img width="50px" alt="content is here" src="./churchInPhone.png"/>
+				<img width="50px" src="./churchInPhone.png" alt="phone screen"/>
 				<div style={circle}></div>
 
 			</div>

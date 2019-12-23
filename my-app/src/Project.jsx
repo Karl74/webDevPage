@@ -14,9 +14,9 @@ const proyectBtn ={
 
 }
 
-const Project = ()=>
+const Project = ({name})=>
 	<div>
-		<button style={proyectBtn}>Project</button>
+		<button style={proyectBtn}>{name}</button>
 	</div>
 
 export default Project	

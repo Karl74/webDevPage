@@ -19,18 +19,14 @@ const textBox = {
 	borderBottom:"solid 3px",
 	margin:'0px' 
 }
-const Home = () =>
+const Home = ({homeData}) =>
 	<div className="home">
 		<article className="sideBar" style={sideBar}>
 	
-			<p>
+			<p style={{textAlign:"justify", padding:"25px"}}>
 				<img style={myPicture} height="90px" width="88px" src="./rndPict.png" alt="Carlos Castro"/>
-				<span style={{fontWeight:"bold", fontSize:"1.2em"}}>Carlos Castro<br/> </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			   	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<span style={{fontWeight:"bold", fontSize:"1.2em"}}>Carlos Castro<br/> 
+				</span>{homeData.article}
 			 </p>
 
 		</article>
@@ -38,18 +34,15 @@ const Home = () =>
 
 		<div className="homeContainer">
 			<div className="statement" style={{margin:"5px 0px 5px 40px", width:"70%"}}>
-				<h1 style={{margin:"0px"}}>WEB DEVELOPER</h1>
-				<p style={textBox}>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				</p>
+				<h1 style={{margin:"0px"}}>{homeData.title}</h1>
+				<p style={textBox}>{homeData.statement}</p>
 			</div>
 
 			<div className="homeContent">
 				
 				<PictureFrame/>
 				
-				<ProjectsMenu/>
+				<ProjectsMenu labelbtn={homeData.buttonText} projects={homeData.portfolio}/>
 			</div>
 		
 		</div>	
