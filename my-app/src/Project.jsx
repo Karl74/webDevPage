@@ -1,7 +1,7 @@
 import React from "react"
 
 const proyectBtn ={
-	width:"150px",
+	width:"165px",
 	height:"45px",
 	margin:"5px",
 	background:"#fefefe",
@@ -14,9 +14,19 @@ const proyectBtn ={
 
 }
 
-const Project = ({name})=>
-	<div>
-		<button style={proyectBtn}>{name}</button>
+const Project = ({name, viewProject, id})=>{
+
+const call = (e)=>{
+	e.preventDefault()
+	viewProject(e.target.id)
+}
+
+	
+	return (
+		<div>
+			<button style={proyectBtn} id={id} onClick={call}>{name}</button>
 	</div>
+	)
+}	
 
 export default Project	

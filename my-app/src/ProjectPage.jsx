@@ -46,7 +46,7 @@ const phoneBox = {
 }
 
 const ProjectPage = ({projectData})=>{
-	console.log(projectData)
+	
 	const data = projectData[0]
 
 	return(
@@ -58,9 +58,8 @@ const ProjectPage = ({projectData})=>{
 			<div style={contentBox}>
 		
 				<p>
-
-						<img src={data.pictures[0]} style={deskPicture} alt="desktop app"/>
-						{data.description}
+					<img src={data.pictures[0]} style={deskPicture} alt="desktop app"/>
+					{data.description}
 				</p>
 			
 				<button style={btnStyle}>{data.buttonText}</button>

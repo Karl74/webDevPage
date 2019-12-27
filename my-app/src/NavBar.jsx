@@ -11,14 +11,15 @@ const tabStyle = {
 	cursor:"pointer"
 }
 
-
 const linkStyle = {
 	color: "#ecd9c6",
 	textDecoration:"underline",
 	cursor:"pointer"
 }
 
-const NavBar = ({navData, change})=>{
+
+
+const NavBar = ({navData, change, home})=>{
 const {languages} = navData
 const {links} = navData
 
@@ -35,7 +36,10 @@ return (
 		</nav>
 		<nav className="navCenter">
 			{links.map((link,i)=>
-				<p key={i} style={linkStyle}>{link}</p> )
+				<p key={i} style={linkStyle}
+					onClick={(link === "Home" || link === "Inicio" || link ==="Accueil")? home(): f=>f}
+
+				>{link}</p> )
 			}
 
 			

@@ -9,7 +9,6 @@ const myPicture = {
 	shapeOutside:"circle()"
 }
 
-
 const sideBar = {
 	margin:"5px"
 }
@@ -19,7 +18,10 @@ const textBox = {
 	borderBottom:"solid 3px",
 	margin:'0px' 
 }
-const Home = ({homeData}) =>
+
+///////////////////////////////////////////////////////////////////////////////
+const Home = ({homeData, displayPts, menuStatus, viewProject}) =>
+
 	<div className="home">
 		<article className="sideBar" style={sideBar}>
 	
@@ -42,7 +44,12 @@ const Home = ({homeData}) =>
 				
 				<PictureFrame/>
 				
-				<ProjectsMenu labelbtn={homeData.buttonText} projects={homeData.portfolio}/>
+				<ProjectsMenu labelbtn={homeData.buttonText}
+				 			  portfolio={homeData.portfolio}
+				 			  menuStatus={menuStatus}
+				 			  onProjects={()=>displayPts}
+				 			  viewProject={viewProject}
+				 			  />
 			</div>
 		
 		</div>	
