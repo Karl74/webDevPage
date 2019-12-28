@@ -1,22 +1,24 @@
 import React from "react"
 
-const tabStyle = {
-	margin:"10px 4px 0px 4px",
+const S = {
+
+tabStyle: {
+	margin:"0px 4px 0px 6px",
 	height:"1.5em",
 	padding:"2px",
 	border:"solid 1px",
 	borderColor: "#fefefe", //was at 85
 	borderRadius:"6px 6px 0px 0px",
-	boxShadow:"-2px -3px 6px #ecd9c6",
+	boxShadow:"-2px -3px 6px #bbbbcf",
 	cursor:"pointer"
-}
+	},
 
-const linkStyle = {
-	color: "#ecd9c6",
+linkStyle: {
+	color: "#bbbbcf",
 	textDecoration:"underline",
 	cursor:"pointer"
+	}
 }
-
 
 
 const NavBar = ({navData, change, home})=>{
@@ -27,16 +29,18 @@ const getIt = (e)=>{
 	e.preventDefault()
 	change(e.target.dataset.label)
 }
+
+
 return (
 	<div className="navBar">
 		<nav className="languages">
 			{languages.map((language, i)=>
-				<p key={i} style={tabStyle} data-label={i} onClick={getIt}>{language}</p>)}
+				<p key={i} style={S.tabStyle} data-label={i} onClick={getIt}>{language}</p>)}
 
 		</nav>
 		<nav className="navCenter">
 			{links.map((link,i)=>
-				<p key={i} style={linkStyle}
+				<p key={i} style={S.linkStyle}
 					onClick={(link === "Home" || link === "Inicio" || link ==="Accueil")? home(): f=>f}
 
 				>{link}</p> )

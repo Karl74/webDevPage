@@ -38,7 +38,6 @@ class App extends React.Component{
 	}
 
 	renderProjectsBtns(){
-		console.log("hey")
 		const menuClose = (this.state.menuClose) ? this.setState({menuClose:false}): this.setState({menuClose:true})
 	}
 
@@ -50,8 +49,9 @@ class App extends React.Component{
 		const{changeLanguage, renderHome, renderProjectsBtns, callAProject} = this
 
 		const projectData = appData.home.portfolio.filter(prt=> prt.id === this.state.project)
+		
 		return (
-				<div>
+				<div className="container">
 					<NavBar navData={appData.navBar} change={changeLanguage} home={()=>renderHome}/>
 					{(!this.state.project) ? 
 						<Home homeData={appData.home}

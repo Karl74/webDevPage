@@ -1,48 +1,49 @@
 import React from "react"
 
-const headerStyle={
-	background:"#006496",
-	color:"#FEFEFE",
-	margin:"0px"
-} 
-
-const sectionStyle= {
-	display:"flex",
-	flexDirection:"row",
-	width:"100%",
-	margin:"0px",
-}
-
-const contentBox = {
-	display:"flex",
-	flexDirection:"column",
-	width:"80%",
-	alignItems:"center"
-}
-
+const S = {
+	headerStyle: {
+		background:"#006496",
+		color:"#FEFEFE",
+		margin:"0px"
+	}, 
 	
-const deskPicture = {
-	float:"left",
-	padding:"10px",
-	width:"60%",
-	margin:"0px 15px 10px 5px"
-}
+	sectionStyle: {
+		display:"flex",
+		flexDirection:"row",
+		width:"100%",
+		margin:"0px",
+	},
 
-const btnStyle ={
-	width:"220px",
-	height:"45px",
-	background:"#006496",
-	color:"#FEFEFE",
-	fontSize:"1.7em",
-	fontWeight:"bolder",
-	borderRadius:"10px",
-	border:"1px solid",
-	cursor:"pointer",
-}
+	contentBox: {
+		display:"flex",
+		flexDirection:"column",
+		width:"80%",
+		alignItems:"center"
+	},
 
-const phoneBox = {
-	width:"20%",
-	margin:"10px 20px 0px 35px"
+	deskPicture: {
+		float:"left",
+		padding:"10px",
+		width:"60%",
+		margin:"0px 15px 10px 5px"
+	},
+
+	btnStyle: {
+		width:"220px",
+		height:"45px",
+		background:"#006496",
+		color:"#FEFEFE",
+		fontSize:"1.7em",
+		fontWeight:"bolder",
+		borderRadius:"10px",
+		border:"1px solid",
+		cursor:"pointer",
+	},
+
+	phoneBox : {
+		width:"20%",
+		margin:"10px 20px 0px 35px"
+	}
 }
 
 const ProjectPage = ({projectData})=>{
@@ -51,21 +52,21 @@ const ProjectPage = ({projectData})=>{
 
 	return(
 	<div>
-		<header style={headerStyle}>
+		<header style={S.headerStyle}>
 			<h1 style={{margin:"0px 0px 0px 15px"}}>{data.title} </h1>
 		</header>
-		<section style={sectionStyle}>
-			<div style={contentBox}>
+		<section style={S.sectionStyle}>
+			<div style={S.contentBox}>
 		
 				<p>
-					<img src={data.pictures[0]} style={deskPicture} alt="desktop app"/>
+					<img src={data.pictures[0]} style={S.deskPicture} alt="desktop app"/>
 					{data.description}
 				</p>
 			
-				<button style={btnStyle}>{data.buttonText}</button>
+				<button style={S.btnStyle}>{data.buttonText}</button>
 			</div>
 
-			<div style={phoneBox}>
+			<div style={S.phoneBox}>
 				<img src={data.pictures[1]}  alt="mobilapp" width="100%"/>
 			</div>
 

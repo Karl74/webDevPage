@@ -2,31 +2,33 @@ import React from "react"
 import ProjectsMenu from "./ProjectsMenu"
 import PictureFrame from "./PictureFrame"
 
-const myPicture = {
-	float:"left",
-	padding:"10px",
-	clipPath:"circle()",
-	shapeOutside:"circle()"
-}
+const S = {
+	 myPicture: {
+		float:"left",
+		padding:"10px",
+		clipPath:"circle()",
+		shapeOutside:"circle()"
+	},
 
-const sideBar = {
-	margin:"5px"
-}
+	textBox: {
+		borderTop: "solid 3px",
+		borderBottom:"solid 3px",
+	},
 
-const textBox = {
-	borderTop: "solid 3px",
-	borderBottom:"solid 3px",
-	margin:'0px' 
+	statement:{
+		margin:"0px",
+		paddingLeft:"35px",
+		width:"70%",
+	}
 }
-
 ///////////////////////////////////////////////////////////////////////////////
 const Home = ({homeData, displayPts, menuStatus, viewProject}) =>
 
 	<div className="home">
-		<article className="sideBar" style={sideBar}>
+		<article className="sideBar">
 	
-			<p style={{textAlign:"justify", padding:"25px"}}>
-				<img style={myPicture} height="90px" width="88px" src="./rndPict.png" alt="Carlos Castro"/>
+			<p style={{textAlign:"justify", padding:" 0px 25px"}}>
+				<img style={S.myPicture} height="75x" width="74.5px" src="./rndPict.png" alt="Carlos Castro"/>
 				<span style={{fontWeight:"bold", fontSize:"1.2em"}}>Carlos Castro<br/> 
 				</span>{homeData.article}
 			 </p>
@@ -35,9 +37,9 @@ const Home = ({homeData, displayPts, menuStatus, viewProject}) =>
 		
 
 		<div className="homeContainer">
-			<div className="statement" style={{margin:"5px 0px 5px 40px", width:"70%"}}>
+			<div className="statement" style={S.statement}>
 				<h1 style={{margin:"0px"}}>{homeData.title}</h1>
-				<p style={textBox}>{homeData.statement}</p>
+				<p style={S.textBox}>{homeData.statement}</p>
 			</div>
 
 			<div className="homeContent">
